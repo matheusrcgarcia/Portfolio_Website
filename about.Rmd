@@ -1,40 +1,45 @@
 ---
-title: "Frank Hermosillo"
-image: "frank.jpg"
+title: "Matheus Cordeiro"
+image: "frank.jpeg"
 links:
   - label: LinkedIn
-    url: "https://linkedin.com/"
-  - label: Twitter
-    url: "https://twitter.com/"
+    url: "https://www.linkedin.com/in/matheus-cordeiro-garcia/"
   - label: GitHub
-    url: "https://github.com/"
+    url: "https://github.com/matheusrcgarcia"
   - label: Email
-    url: "mailto:email@email.com"
+    url: "mailto:matheusr@cpp.edu"
+  - label: Tableau
+    url: "https://public.tableau.com/app/profile/matheus.ragghianti.cordeiro.de.garcia#!/?newProfile=&activeTab=0"    
 output:
   postcards::trestles
 ---
  
 ## Bio
 
-Frank Hermosillo studies neural networks and their applications at Google 
-Brain. His research focuses on differentiable network pruning approximation and 
-decentralized gradient inversion mechanics. He frequently collaborates with 
-researchers who study machine learning, computer vision, and cognitive science.
-His work has been featured in WIRED, The Atlantic, Newsweek, and The New York 
-Times Magazine.
+Matheus Cordeiro is an international student from Brazil, who is studying his Master in Business Administration at Cal Poly Pomona. With his bachelor's in Chemical Engineering, he uses his analytical skills, combined with his previous experience in marketing, to provide important and relevant information to the decision-makers. 
+
+At this moment, he is looking to gain professional experience in different types of analytical areas related to data (data analysis, finance analyst, marketing analyst, etc). He has a passion for analyzing data and problem solving, and how it can facilitate innovation.
 
 ## Education
 
-**Massachusetts Institute of Technology** | Cambridge, MA
+**California Polytechnic State University Pomona** | Pomona, CA
 
-Ph.D. in Computer Science | September 2009 - May 2014
+Master in Business Analytics | August 2021 - August 2022 (expected)
 
-**The University of California, Berkeley** | Berkeley, CA
+**Sao Paulo State University (USP)** | Lorena, Brazil
 
-B.S. in Computer Science | September 2005 - May 2009
+B.S. in Chemical Engineering | January 2015 - December 2020
 
 ## Experience
 
-**Google Brain** | Principal Investigator | January 2018 - Present
+**Center for Customer Insights and Digital Marketing** | Data Analytics Lead | March 2022 - Present
 
-**Netflix** | Research Scientist | June 2014 - December 2017
+**Center for Customer Insights and Digital Marketing** | Junior Data Scientist | September 2021 - March 2022
+
+**DuPont** | Marketing Specialist | January 2021 - July 2021
+
+**DuPont** | Marketing Strategy Intern LATAM | January 2020 - December 2020
+
+**BASF** | Global Laboratory Intern | August 2018 - December 2019
+
+
