@@ -8,6 +8,14 @@
       "last_modified": "2022-03-19T21:07:18-07:00"
     },
     {
+      "path": "content.html",
+      "title": "Portfolio",
+      "description": "Here you will find all my projects displayed! ",
+      "author": [],
+      "contents": "\r\nPython\r\nSales Analysis\r\nIn this project I used Python Pandas & Python Matplotlib to analyze and answer business questions about 12 months worth of sales data. The data contains hundreds of thousands of electronics store purchases broken down by month, product type, cost, purchase address, etc.\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-03-20T10:38:41-07:00"
+    },
+    {
       "path": "index.html",
       "title": "Portfolio Website",
       "description": "Welcome to the website. I hope you enjoy it!\n",
