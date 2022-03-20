@@ -1,0 +1,11 @@
+---
+title: "Portfolio"
+description: |
+  Here you will find all my projects displayed! 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Python 
