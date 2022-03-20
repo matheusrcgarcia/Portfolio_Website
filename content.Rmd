@@ -31,3 +31,22 @@ And the best way to answer those is analyzing that dataset of *four decades* usi
 
 ![](image2.jpg){width=50%}
 
+# R 
+
+## [Analyzing Super Bowl Ads](smoke_preg.html)
+
+   Like millions of viewers who tune into the big game year after year, I love Super Bowl commercials. I love them so much, in fact, that I wanted to know everything about them… by analyzing and categorizing them, of course. I dug into the defining characteristics of a Super Bowl ad, then grouped commercials based on which criteria they shared — and let me tell you, I found some really interesting clusters of commercials.
+  
+![](image5.jpg){width=50%}
+
+## [Transit Cost Project](ceo_sal.html)
+
+  The goal of this work is to figure out how to deliver more high-capacity transit projects for a fraction of the cost in countries like the United States. Additionally, we hope that our site will be a useful resource for elected officials, planners, researchers, journalists, advocates, and others interested in contextualizing transit-infrastructure costs and fighting for better projects.
+  
+![](image6.jpg){width=50%}
+
+## [Multi Linear Regression](W3.C11.html)
+
+  I used the build-in dataset (meapsingle) on wooldridge pacakge, to study the effects of single-parent households on student math performance, using **multi linear regression**. These data are for a subset of schools in southeast Michigan for the year 2000. The socioeconomic variables are obtained at the ZIP code level (where ZIP code is assigned to schools based on their mailing addresses).
+  
+![](image4.jpg){width=50%}
