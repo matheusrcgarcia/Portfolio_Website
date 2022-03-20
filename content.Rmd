@@ -50,3 +50,12 @@ And the best way to answer those is analyzing that dataset of *four decades* usi
   I used the build-in dataset (meapsingle) on wooldridge pacakge, to study the effects of single-parent households on student math performance, using **multi linear regression**. These data are for a subset of schools in southeast Michigan for the year 2000. The socioeconomic variables are obtained at the ZIP code level (where ZIP code is assigned to schools based on their mailing addresses).
   
 ![](image4.jpg){width=50%}
+
+
+# SQL 
+
+## [SQL Data Exploration](sql_try.html)
+
+For this beginner-mid level project I used a Covid dataset as my base to use queries to explore the information that the dataset contains. Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types.
+
+![](image7.jpg){width=50%}
