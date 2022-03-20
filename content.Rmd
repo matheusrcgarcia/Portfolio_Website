@@ -59,3 +59,13 @@ And the best way to answer those is analyzing that dataset of *four decades* usi
 For this beginner-mid level project I used a Covid dataset as my base to use queries to explore the information that the dataset contains. Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types.
 
 ![](image7.jpg){width=50%}
+
+## [Data Cleaning in SQL](sql_clean.html)
+
+Continuing my SQL projects, I will be performing data cleaning in a more advanced way. The data set that I will be cleaning have the information about Nashville Housing, that contains information about the Property Address, Sales Date, Sales Price, Owner Name and much more.
+
+![](image8.jpg){width=50%}
+
+# [Tableau Projects](tableau.html)
+
+Here you will find my projects using this powerful visualization tool, Tableau.
