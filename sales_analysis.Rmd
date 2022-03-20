@@ -50,21 +50,23 @@ feb_head=feb.head()
 feb_head.to_html()
 
 mar_head=mar.head()
+mar_head.to_html()
 ```
 
 - Merging all the dataset into one single file
 
   - It's looks like we have the same number of columns in each dataset. Let's concatenate all of them 
 
-```{python}
+```{python, results='asis'}
 df = pd.concat([jan,feb,mar,apr,may,jun,jul,aug,sep,octo,nov,dec])
-
+df_head = df.head()
+df_head.to_html()
 ```
 
 - Let's check the shape of it 
 
 ```{python}
-df.shape # Looks good
+df.shape  #Looks good
 ```
 
 # Questions 
@@ -132,9 +134,10 @@ df=df.dropna()
 
 - Creating new column that corresponds to the total sales
 
-```{python}
+```{python, results='asis'}
 df["Total_Sales"] = df["Price Each"]*df["Quantity Ordered"]
-df
+df_head = df.head()
+df_head.to_html()
 ```
 
 - Creating a new variable to assign the month grouped
@@ -145,14 +148,17 @@ best_month.reset_index(inplace=True)
 best_month
 ```
 
+
 - Ploting the data using seaborn
 
-```{python plot}
+```{python, out.width = '90%', fig.align = "center"}
 sns.barplot(x="Total_Sales", y="Month", data=best_month);
 plt.show()
 ```
 
-## Question 2: Whats was the best month for sales? How much was earned that month?
+- December was the best month for sales. The total earned this month was $4.613.443,34.
+
+## Question 2: What city had the highest number of sales?
 
 - Changing the datatype on the column "Purchase Address"
 
@@ -174,8 +180,9 @@ df["City"]=city[1]
 
 - Let´s check how our df looks like now
 
-```{python}
-df.head()
+```{python, results='asis'}
+df_head = df.head()
+df_head.to_html()
 ```
 
 - Creating a new variable that contains info for cities grouped
@@ -187,10 +194,12 @@ best_city.reset_index(inplace=True)
 
 - Plotting the data
 
-```{python}
+```{python, out.width = '90%', fig.align = "center"}
 sns.barplot(x="Total_Sales", y="City", data=best_city);
 plt.show()
 ```
+
+- The city which had the highest number of sales was **San Francisco**
 
 ## Question 3: What time we should display the advertisements to maxime the likelihood of customer's buying products?
 
@@ -210,20 +219,23 @@ hour.reset_index(inplace=True)
 
 - Plotting using seaborn
 
-```{python}
+```{python, out.width = '90%', fig.align = "center"}
 sns.lineplot(data=hour, x="Hour", y="Total_Sales");
 plt.xticks(hour["Hour"]);
 plt.grid();
 plt.show()
 ```
 
+- The best time to display the advertisements is 19h (7 pm). My assumption that this occurs because it when people have already came back from work and they are having dinner at this moment, watching TV.
+
 ## Question 4: What products are most often sold together?
 
 - The products are sold together when they have the same order ID, therefore we need only the row that have the same number for Order ID, and we'll assign it to a new dataframe
 
-```{python}
+```{python, results='asis'}
 products=df[df["Order ID"].duplicated(keep=False)]
-products.head()
+products_head=products.head()
+products_head.to_html()
 ```
 
 - Now, we'll join the produts which has the same order ID (grouped) and we'll create a new column. After that, we'll remove the duplicates
@@ -245,6 +257,8 @@ for key,value in count.most_common(1):
     print("Produts that are more often sold together are:", key)
 ```
 
+
+
 ## Question 5: What product sold the most? Why do you think it sold the most?
 
 - To find this answer we need to create a new variable and assign the product column grouped 
@@ -259,14 +273,14 @@ sold_most.iloc[0] # Answer
 
 - Plotting in sns
 
-```{python}
+```{python, out.width = '80%', fig.align = "center"}
 sns.barplot(x="Quantity Ordered",y="Product",data=sold_most,palette='rocket');
 plt.show()
 ```
 
 - Plotting in plt
 
-```{python}
+```{python, out.width = '70%', fig.align = "center"}
 plt.bar(sold_most["Product"],sold_most["Quantity Ordered"]);
 plt.xticks(sold_most["Product"],rotation='vertical');
 plt.show()
@@ -291,7 +305,7 @@ merg=pd.merge(sold_most,cheap,how='inner')
 
 - Plotting
 
-```{python}
+```{python, out.width = '80%', fig.align = "center"}
 sns.barplot(x="Product",y="Quantity Ordered",data=merg);
 plt.xticks(rotation=90);
 ax2 = plt.twinx();
@@ -299,3 +313,16 @@ sns.lineplot(x="Product",y="Price Each",data=merg, color="b", ax=ax2);
 plt.show()
 ```
 
+# Conclusions
+
+On this analysis we can conclude: 
+
+- The best month of sales in December, most likely because of the holidays on the end of the year; 
+
+- The city which had the highest number of sales is San Francisco;
+
+- The best time to display our marketing campaign is on 19h (7 pm); 
+
+- The products that are more often sold together are IPhone and Lightning Charging Cable; 
+
+- AAA batteries is the product that sold the most during the year, this happened because it is one of are chepaest products in store. 
